@@ -9,9 +9,11 @@ interface DefaultLayoutProps {
 function DefaultLayout({children}: DefaultLayoutProps) {
   return (
     <>
-      <Header />
-      <AppStyled>{children}</AppStyled>
-      <Footer />
+      <AppStyled>
+        <Header />
+        {children}
+        <Footer />
+      </AppStyled>
     </>
   );
 }
